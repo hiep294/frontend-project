@@ -1,8 +1,8 @@
 .feature-products {
   &__heading {
     display: flex;
-    height: 243px;
-    padding-top: 50px;
+    height: 250px;
+    padding-top: 55px;
     align-items: center;
     justify-content: space-between;
     .title {
@@ -16,7 +16,7 @@
       font-size: 14px;
       margin-right: 9px;
       letter-spacing: 0.02em;
-      margin-bottom: -33px;
+      margin-bottom: -27px;
       font-family: "FiraSans-Bold";
       color: rgb(51, 51, 51);
       font-weight: bold;
@@ -40,14 +40,76 @@
 }
 
 .product-item {
-  img {
+  img.product-thumb {
     width: 100%;
   }
-  &__body {
-    height: 57px;
+  &__image-container {
+    position: relative;
+    .next,
+    .prev {
+      position: absolute;
+      left: 11px;
+      top: 44%;
+      transition: all 0.3s;
+      opacity: 0;
+    }
+    .next {
+      left: auto;
+      right: 11px;
+    }
+
+    .add-to-card {
+      opacity: 0;
+      transition: all 0.3s;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      display: flex;
+      &__text {
+        // layout
+        flex: 1;
+        height: 40px;
+        display: flex;
+        padding: 0 5px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(214, 186, 141);
+        // content
+        span {
+          @include line-clamp(1);
+          font-size: 14px;
+          letter-spacing: 0.1em;
+          font-family: "FiraSans";
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+      &__icon {
+        height: 40px;
+        width: 40px;
+        background-color: rgb(51, 51, 51);
+        opacity: 0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1px;
+      }
+    }
+
+    // HOVER
+    &:hover .add-to-card,
+    &:hover .next,
+    &:hover .prev {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    height: 61px;
     .name {
       @include line-clamp(1);
-      padding-top: 14px;
+      padding-top: 15px;
       font-size: 14px;
       font-family: "FiraSans";
       color: rgb(51, 51, 51);

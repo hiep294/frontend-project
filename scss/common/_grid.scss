@@ -5,12 +5,12 @@
   margin-right: -15px;
   row-gap: 30px;
   &.gutter-50 {
-    margin-left: -26px;
-    margin-right: -26px;
-    row-gap: 47px;
+    margin-left: -25px;
+    margin-right: -25px;
+    row-gap: 50px;
     & > * {
-      padding-left: 26px;
-      padding-right: 26px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
   }
 }
