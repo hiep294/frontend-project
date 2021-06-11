@@ -1,7 +1,8 @@
 .feature-products {
-  margin-top: 130px;
   &__heading {
     display: flex;
+    height: 250px;
+    padding-top: 50px;
     align-items: center;
     justify-content: space-between;
     .title {
@@ -13,10 +14,10 @@
     }
     .view-more {
       font-size: 14px;
-      margin-top: 20px;
-      margin-right: 13px;
+      margin-right: 9px;
+      letter-spacing: 0.02em;
+      margin-bottom: -25px;
       font-family: "FiraSans-Bold";
-      letter-spacing: 0.15em;
       color: rgb(51, 51, 51);
       font-weight: bold;
       text-transform: uppercase;
@@ -35,6 +36,5 @@
     }
   }
   &__body {
-    margin-top: 73px;
   }
 }
