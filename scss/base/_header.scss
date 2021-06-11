@@ -1,0 +1,106 @@
+.header {
+  position: relative;
+  background: url("images/bg.jpg") no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  overflow-x: hidden;
+  &__menu {
+    padding-top: 29px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    .menu__right {
+      display: flex;
+      align-items: center;
+      margin-right: 11px;
+      &__item {
+        position: relative;
+        &:not(:last-of-type) {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+
+  &__slider-content {
+    max-width: 1460px;
+    margin-left: auto;
+    padding-left: 15px;
+    margin-top: calc(346px - 85px); // 81px is height of header
+
+    .slider-content-main {
+      display: flex;
+      justify-content: space-between;
+
+      .slider-heading {
+        .slider-date {
+          font-size: 24.339px;
+          font-family: "FiraSans";
+          letter-spacing: 0.5em;
+          color: dimgray;
+          line-height: 1.333;
+          // top: 372.044px;
+        }
+        .slider-slogan {
+          font-size: 100px;
+          font-family: "CormorantGaramond-SemiBoldItalic";
+          color: #333;
+          font-weight: bold;
+          font-style: italic;
+          text-transform: uppercase;
+          line-height: 100px;
+          text-align: left;
+          letter-spacing: 0.3em;
+          margin-top: calc(75px - 45px);
+        }
+      }
+
+      .slider-socials {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        .social-item {
+          list-style: none;
+          a {
+            font-size: 24px;
+            font-family: "CormorantGaramond-Medium";
+            color: rgb(255, 255, 255);
+            line-height: 1.667;
+            text-align: right;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            color: #dddddd;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: flex-end;
+            transition: all 0.3s;
+          }
+          a:after {
+            content: "";
+            border-bottom: 2px solid #535353;
+            width: 150px;
+            height: 1px;
+            margin-left: 20px;
+            margin-right: calc(-150px - 20px);
+            opacity: 0;
+            transition: all 0.4s;
+            transform: translateX(100%);
+          }
+          a:hover {
+            color: #feffff;
+          }
+          a:hover:after {
+            color: #e7e7e7;
+            opacity: 1;
+            transform: translateX(0%);
+          }
+        }
+      }
+    }
+
+    .slider-btn-layout {
+      margin-top: 56px;
+    }
+  }
+}

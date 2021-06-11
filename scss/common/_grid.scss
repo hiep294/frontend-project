@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  row-gap: 30px;
+  &.gutter-50 {
+    margin-left: -26px;
+    margin-right: -26px;
+    row-gap: 47px;
+    & > * {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+  }
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6);
+  padding-left: 15px;
+  padding-right: 15px;
+}

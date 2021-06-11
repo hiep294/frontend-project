@@ -1,0 +1,9 @@
+.feature-items {
+  img {
+    width: 100%;
+    @media screen and (max-width: 1919px) {
+      // fill image which not 1920px
+      height: 100%;
+    }
+  }
+}
