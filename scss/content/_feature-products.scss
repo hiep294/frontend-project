@@ -58,15 +58,16 @@
       right: 11px;
     }
 
-    .add-to-card {
+    .add-to-card-container {
       opacity: 0;
       transition: all 0.3s;
       position: absolute;
       width: 100%;
       bottom: 0;
       display: flex;
-      &__text {
+      .add-to-card {
         // layout
+        text-decoration: none;
         flex: 1;
         height: 40px;
         display: flex;
@@ -79,13 +80,13 @@
           @include line-clamp(1);
           font-size: 14px;
           letter-spacing: 0.1em;
-          font-family: "FiraSans";
+          font-family: "FiraSans-Bold";
           color: rgb(255, 255, 255);
           font-weight: bold;
           text-transform: uppercase;
         }
       }
-      &__icon {
+      .other-icon {
         height: 40px;
         width: 40px;
         background-color: rgb(51, 51, 51);
@@ -98,7 +99,7 @@
     }
 
     // HOVER
-    &:hover .add-to-card,
+    &:hover .add-to-card-container,
     &:hover .next,
     &:hover .prev {
       opacity: 1;
