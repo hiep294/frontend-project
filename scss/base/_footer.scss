@@ -31,6 +31,7 @@
             text-transform: uppercase;
             line-height: 1.714;
             letter-spacing: 0.1em;
+            transition: all 0.3s;
             &:hover {
               color: rgb(214, 186, 141);
             }
@@ -88,11 +89,13 @@
         border: 2px solid #4e4e4e;
         border-radius: 50%;
         text-decoration: none;
+        transition: all 0.3s;
         &:not(:last-of-type) {
           margin-right: 9px;
         }
         i {
           font-size: 16px;
+          transition: all 0.3s;
           color: rgb(171, 171, 171);
         }
         &:hover {
