@@ -16,7 +16,7 @@
       font-size: 14px;
       margin-right: 9px;
       letter-spacing: 0.02em;
-      margin-bottom: -27px;
+      margin-bottom: -27.5px;
       font-family: "FiraSans-Bold";
       color: rgb(51, 51, 51);
       font-weight: bold;
@@ -109,7 +109,7 @@
     height: 61px;
     .name {
       @include line-clamp(1);
-      padding-top: 15px;
+      padding-top: 16px;
       font-size: 14px;
       font-family: "FiraSans";
       color: rgb(51, 51, 51);
