@@ -1,17 +1,29 @@
 .intro {
+  min-height: 410px;
   .intro__services {
     display: flex;
     border-left: 1px solid #efefef;
     padding: 0;
     .intro__service {
-      width: calc(100% / 3);
+      min-height: 80px;
+      flex: 400;
       border-right: 1px solid #efefef;
-      padding: 21px 0 14px 0;
+      &:first-of-type {
+        flex: 383;
+      }
+      &:last-of-type {
+        flex: 385;
+      }
+      // layout children
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       // margin: 0 -1px;
       .title {
+        padding-top: 22px;
         font-size: 18px;
         letter-spacing: 0.1em;
-        font-family: "CormorantGaramond-Bold";
+        font-family: "CormorantGaramond";
         color: rgb(51, 51, 51);
         font-weight: bold;
         text-transform: uppercase;
