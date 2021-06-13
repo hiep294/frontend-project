@@ -49,9 +49,9 @@
     .next,
     .prev {
       position: absolute;
-      left: 11px;
-      top: 44%;
+      top: 42.5%;
       transition: all 0.3s;
+      left: 0;
       opacity: 0;
       width: 30px;
       height: 30px;
@@ -59,17 +59,19 @@
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      border: 1px solid;
       cursor: pointer;
       background: url("images/icons/prev.png") no-repeat 0 0;
       background-position: center;
       &.disabled {
         pointer-events: none;
       }
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
+      }
     }
     .next {
       left: auto;
-      right: 11px;
+      right: 0px;
       background: url("images/icons/next.png") no-repeat 0 0;
       background-position: center;
     }

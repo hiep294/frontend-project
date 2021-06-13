@@ -11,13 +11,15 @@
     .links-container {
       flex: 1;
       display: flex;
+      padding-left: 30px;
+      padding-right: 30px;
       .space {
         flex: 1;
       }
       .links {
         display: flex;
         margin-top: 75px;
-        flex: 4.9;
+        flex: 5.9;
         .link {
           &:not(:last-of-type) {
             margin-right: 33px;
