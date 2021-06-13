@@ -45,6 +45,7 @@
   }
   &__image-container {
     position: relative;
+    // next and prev
     .next,
     .prev {
       position: absolute;
@@ -52,12 +53,37 @@
       top: 44%;
       transition: all 0.3s;
       opacity: 0;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid;
+      cursor: pointer;
+      background: url("images/icons/prev.png") no-repeat 0 0;
+      background-position: center;
+      &.disabled {
+        pointer-events: none;
+      }
     }
     .next {
       left: auto;
       right: 11px;
+      background: url("images/icons/next.png") no-repeat 0 0;
+      background-position: center;
     }
 
+    &:hover .next,
+    &:hover .prev {
+      opacity: 1;
+    }
+    &:hover .next.disabled,
+    &:hover .prev.disabled {
+      opacity: 0.3;
+    }
+
+    // add to card container
     .add-to-card-container {
       opacity: 0;
       transition: all 0.3s;
@@ -98,10 +124,7 @@
       }
     }
 
-    // HOVER
-    &:hover .add-to-card-container,
-    &:hover .next,
-    &:hover .prev {
+    &:hover .add-to-card-container {
       opacity: 1;
     }
   }
