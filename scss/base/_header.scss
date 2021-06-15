@@ -1,8 +1,6 @@
 .header {
-  position: relative;
-  background: url("images/bg.jpg") no-repeat;
-  background-size: cover;
-  min-height: 1000px;
+  position: absolute;
+  width: 100%;
   overflow-x: hidden;
   &__menu {
     padding-top: 29px;
