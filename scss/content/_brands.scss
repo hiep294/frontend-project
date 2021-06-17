@@ -1,9 +1,10 @@
 .brands {
-  height: 200px;
+  min-height: 200px;
   display: flex;
   .brands__list {
     margin-top: -15px;
     .brand {
+      padding: 10px;
       height: 100%;
       display: flex;
       justify-content: center;

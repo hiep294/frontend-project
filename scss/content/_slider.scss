@@ -1,6 +1,7 @@
 .slider {
   background: url("images/bg.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
   // fix hover to social, a line will appear
   overflow: hidden;
   .container-big {
@@ -13,7 +14,7 @@
   margin-left: auto;
   padding-left: 15px;
   padding-bottom: 40px;
-  min-height: 600px;
+  min-height: 100vh;
   padding-top: 250px;
   @include at-xxl {
     min-height: 1000px;
@@ -33,7 +34,10 @@
         // top: 372.044px;
       }
       .slider-slogan {
-        font-size: 100px;
+        font-size: 80px;
+        @include at-xxl {
+          font-size: 100px;
+        }
         font-family: "CormorantGaramond-SemiBoldItalic";
         color: #333;
         font-weight: bold;
