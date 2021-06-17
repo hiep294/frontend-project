@@ -13,28 +13,95 @@
       padding-right: 25px;
     }
   }
+  &.gutter-xxl-50 {
+    @include at-xxl {
+      margin-left: -25px;
+      margin-right: -25px;
+      row-gap: 50px;
+      & > * {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+}
+
+.col-0 {
+  display: none;
 }
 
 .col-2 {
+  display: initial;
   width: calc(100% / 12 * 2);
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .col-3 {
+  display: initial;
   width: calc(100% / 12 * 3);
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .col-4 {
+  display: initial;
   width: calc(100% / 12 * 4);
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .col-6 {
+  display: initial;
   width: calc(100% / 12 * 6);
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.col-12 {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-md-0 {
+  @include at-md {
+    display: none;
+  }
+}
+
+.col-md-2 {
+  @include at-md {
+    display: initial;
+    width: calc(100% / 12 * 2);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.col-md-3 {
+  @include at-md {
+    display: initial;
+    width: calc(100% / 12 * 3);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.col-md-4 {
+  @include at-md {
+    display: initial;
+    width: calc(100% / 12 * 4);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.col-md-6 {
+  @include at-md {
+    display: initial;
+    width: calc(100% / 12 * 6);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

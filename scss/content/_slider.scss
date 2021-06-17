@@ -12,9 +12,13 @@
   max-width: 1460px;
   margin-left: auto;
   padding-left: 15px;
-  min-height: 1000px;
-  padding-top: 342px; // 81px is height of header
-
+  padding-bottom: 40px;
+  min-height: 600px;
+  padding-top: 250px;
+  @include at-xxl {
+    min-height: 1000px;
+    padding-top: 342px;
+  }
   &__group-1 {
     display: flex;
     justify-content: space-between;

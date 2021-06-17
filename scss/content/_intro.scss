@@ -4,15 +4,20 @@
     display: flex;
     border-left: 1px solid #efefef;
     padding: 0;
+    flex-direction: column;
+    @include at-md {
+      flex-direction: row;
+    }
     .intro__service {
       min-height: 80px;
       flex: 400;
       border-right: 1px solid #efefef;
+      border-bottom: 1px solid #efefef;
       &:first-of-type {
-        flex: 383;
+        flex: 383; // for perfect pixel
       }
       &:last-of-type {
-        flex: 385;
+        flex: 385; // for perfect pixel
       }
       // layout children
       display: flex;
@@ -20,7 +25,7 @@
       flex-direction: column;
       // margin: 0 -1px;
       .title {
-        padding-top: 22px;
+        padding: 22px 10px 0px 10px;
         font-size: 18px;
         letter-spacing: 0.1em;
         font-family: "CormorantGaramond";
@@ -34,14 +39,15 @@
         font-size: 14px;
         font-family: "FiraSans";
         color: rgb(171, 171, 171);
-        margin-top: 7px;
         text-align: center;
+        padding: 7px 10px 10px 10px;
       }
     }
   }
 
   .intro__divider {
     border-bottom: 1px solid #efefef;
+    margin-top: -1px;
   }
 
   .intro__guide-line {
