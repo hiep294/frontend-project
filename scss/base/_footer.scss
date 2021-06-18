@@ -10,44 +10,38 @@
     & > *:not(:last-child) {
       margin-right: 30px;
     }
-    .logo {
+    .logo-container {
       margin-bottom: 15px;
+      flex: 1;
       @include at-lg {
         margin-top: 7px;
       }
     }
 
-    .links-container {
+    .links {
       display: flex;
-      flex: 1;
+      flex-wrap: wrap;
       margin-top: 0px;
       @include at-lg {
         margin-top: 75px;
       }
-      .space {
-        flex: 1;
-      }
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        flex: 5.9;
-        .link {
-          &:not(:last-of-type) {
-            margin-right: 33px;
-          }
-          a {
-            text-decoration: none;
-            font-size: 14px;
-            font-family: "FiraSans-Bold";
-            color: #ababab;
-            font-weight: bold;
-            text-transform: uppercase;
-            line-height: 1.714;
-            letter-spacing: 0.1em;
-            transition: all 0.3s;
-            &:hover {
-              color: rgb(214, 186, 141);
-            }
+      flex: 2.25;
+      .link {
+        &:not(:last-of-type) {
+          margin-right: 33px;
+        }
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-family: "FiraSans-Bold";
+          color: #ababab;
+          font-weight: bold;
+          text-transform: uppercase;
+          line-height: 1.714;
+          letter-spacing: 0.1em;
+          transition: all 0.3s;
+          &:hover {
+            color: rgb(214, 186, 141);
           }
         }
       }
