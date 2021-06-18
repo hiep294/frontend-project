@@ -90,6 +90,7 @@
     &:hover .next.disabled,
     &:hover .prev.disabled {
       opacity: 0.3;
+      pointer-events: none;
     }
 
     // add to card container
@@ -118,6 +119,7 @@
           font-family: "FiraSans-Bold";
           color: rgb(255, 255, 255);
           font-weight: bold;
+          margin-left: 5px;
           text-transform: uppercase;
         }
       }
