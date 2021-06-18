@@ -7,13 +7,20 @@
     align-items: center;
     flex-wrap: wrap;
     row-gap: 15px;
+    flex-direction: column;
     & > *:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 0px;
+      @include at-xl {
+        margin-right: 30px;
+      }
+    }
+    @include at-xl {
+      flex-direction: row;
     }
     .logo-container {
       margin-bottom: 15px;
       flex: 1;
-      @include at-lg {
+      @include at-xl {
         margin-top: 7px;
       }
     }
@@ -22,7 +29,7 @@
       display: flex;
       flex-wrap: wrap;
       margin-top: 0px;
-      @include at-lg {
+      @include at-xl {
         margin-top: 75px;
       }
       flex: 2.25;
@@ -49,7 +56,7 @@
     .subscribe {
       height: 40px;
       margin-top: 0px;
-      @include at-lg {
+      @include at-xl {
         margin-top: 75px;
       }
       padding: 0 18px;
