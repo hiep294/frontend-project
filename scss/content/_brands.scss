@@ -3,6 +3,7 @@
   display: flex;
   .brands__list {
     margin-top: -15px;
+    row-gap: 0px; // override row-gap of class 'row'
     .brand {
       padding: 10px;
       height: 100%;
