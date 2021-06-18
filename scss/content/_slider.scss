@@ -1,7 +1,7 @@
 .slider {
   background: url("images/bg.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 75% 25%;
   // fix hover to social, a line will appear
   overflow: hidden;
   .container-big {
@@ -15,7 +15,10 @@
   padding-left: 15px;
   padding-bottom: 40px;
   min-height: 100vh;
-  padding-top: 250px;
+  padding-top: 200px;
+  @include at-sm {
+    padding-top: 250px;
+  }
   @include at-xxl {
     min-height: 1000px;
     padding-top: 342px;
@@ -26,15 +29,26 @@
 
     .slider-heading {
       .slider-date {
-        font-size: 24.339px;
+        font-size: 16.339px;
         font-family: "FiraSans";
         letter-spacing: 0.5em;
         color: dimgray;
         line-height: 1.333;
-        // top: 372.044px;
+        @include at-sm {
+          font-size: 20.339px;
+        }
+        @include at-lg {
+          font-size: 24.339px;
+        }
       }
       .slider-slogan {
-        font-size: 80px;
+        font-size: 40px;
+        @include at-sm {
+          font-size: 60px;
+        }
+        @include at-lg {
+          font-size: 80px;
+        }
         @include at-xxl {
           font-size: 100px;
         }
@@ -43,7 +57,7 @@
         font-weight: bold;
         font-style: italic;
         text-transform: uppercase;
-        line-height: 100px;
+        line-height: 1;
         text-align: left;
         letter-spacing: 0.3em;
         margin-top: calc(75px - 42px);
@@ -57,7 +71,7 @@
       .social-item {
         list-style: none;
         a {
-          font-size: 24px;
+          font-size: 13px;
           font-family: "CormorantGaramond-Medium";
           color: rgb(255, 255, 255);
           line-height: 1.667;
@@ -70,6 +84,15 @@
           position: relative;
           justify-content: flex-end;
           transition: all 0.3s;
+          @include at-sm {
+            font-size: 16px;
+          }
+          @include at-lg {
+            font-size: 20px;
+          }
+          @include at-xxl {
+            font-size: 24px;
+          }
         }
         a:after {
           content: "";

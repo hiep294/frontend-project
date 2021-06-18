@@ -5,10 +5,20 @@
   display: inline-block;
 
   // text
-  font-size: 16px;
+  font-size: 10px;
   font-family: "FiraSans-Bold";
   color: #fff;
   font-weight: bold;
   letter-spacing: 2.4px;
   text-transform: uppercase;
+
+  @include at-sm {
+    font-size: 12px;
+  }
+  @include at-lg {
+    font-size: 14px;
+  }
+  @include at-xxl {
+    font-size: 16px;
+  }
 }
