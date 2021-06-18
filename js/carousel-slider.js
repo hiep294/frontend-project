@@ -98,7 +98,11 @@ const initNavigationListeners = (
     if (!prevElement.classList.contains("disabled")) {
       prevElement.classList.add("disabled");
     }
-    prevElement.addEventListener("click", () => {
+    prevElement.addEventListener("click", (e) => {
+      // return when disabled
+      const classList = e?.target?.classList?.value || "";
+      if (classList.includes("disabled")) return;
+
       const translateX = getCurrentTranslateX() + 100 / childListCount;
       listEl.style.transform = Modernizr.prefixedCSSValue(
         "transform",
@@ -115,7 +119,11 @@ const initNavigationListeners = (
 
   // add next btn event listener
   if (nextElement) {
-    nextElement.addEventListener("click", () => {
+    nextElement.addEventListener("click", (e) => {
+      // return when disabled
+      const classList = e?.target?.classList?.value || "";
+      if (classList.includes("disabled")) return;
+
       const translateX = getCurrentTranslateX() - 100 / childListCount;
       listEl.style.transform = Modernizr.prefixedCSSValue(
         "transform",

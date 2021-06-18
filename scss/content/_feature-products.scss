@@ -72,9 +72,6 @@
       cursor: pointer;
       background: url("images/icons/prev.png") no-repeat 0 0;
       background-position: center;
-      &.disabled {
-        pointer-events: none;
-      }
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
       }
