@@ -107,6 +107,15 @@
   }
 }
 
+.col-sm-12 {
+  @include at-sm {
+    display: initial;
+    width: calc(100% / 12 * 12);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 // AT - MD
 .col-md-0 {
   @include at-md {

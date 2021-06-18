@@ -4,6 +4,7 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
+$fhd: 1720px; // the true 1920px, but equal to container-big
 
 @mixin at-sm {
   @media screen and (min-width: #{$sm}) {
@@ -31,6 +32,12 @@ $xxl: 1400px;
 
 @mixin at-xxl {
   @media screen and (min-width: #{$xxl}) {
+    @content;
+  }
+}
+
+@mixin at-fhd {
+  @media screen and (min-width: #{$fhd}) {
     @content;
   }
 }

@@ -13,11 +13,11 @@
   max-width: 1460px;
   margin-left: auto;
   padding-left: 15px;
-  padding-bottom: 40px;
-  min-height: 100vh;
-  padding-top: 200px;
+  padding-bottom: 30px;
+  min-height: 500px;
+  padding-top: 240px;
   @include at-sm {
-    padding-top: 250px;
+    padding-top: 300px;
   }
   @include at-xxl {
     min-height: 1000px;
