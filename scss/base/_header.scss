@@ -17,6 +17,7 @@
       display: flex;
       align-items: center;
       margin-right: 11px;
+      margin-top: -2px;
       &__item {
         position: relative;
         &:not(:last-of-type) {
