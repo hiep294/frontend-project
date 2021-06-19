@@ -32,7 +32,7 @@
         font-size: 16.339px;
         font-family: "FiraSans";
         letter-spacing: 0.5em;
-        color: dimgray;
+        color: $color-4;
         line-height: 1.333;
         @include at-sm {
           font-size: 20.339px;
@@ -53,7 +53,7 @@
           font-size: 100px;
         }
         font-family: "CormorantGaramond-SemiBoldItalic";
-        color: #333;
+        color: $color-1;
         font-weight: bold;
         font-style: italic;
         text-transform: uppercase;
@@ -73,12 +73,12 @@
         a {
           font-size: 13px;
           font-family: "CormorantGaramond-Medium";
-          color: rgb(255, 255, 255);
+          color: $color-white;
           line-height: 1.667;
           text-align: right;
           letter-spacing: 0.1em;
           text-decoration: none;
-          color: #dddddd;
+          color: $color-8;
           display: flex;
           align-items: center;
           position: relative;
@@ -106,10 +106,10 @@
           transform: translateX(100%);
         }
         a:hover {
-          color: #feffff;
+          color: $color-9;
         }
         a:hover:after {
-          color: #e7e7e7;
+          color: $color-a1;
           opacity: 1;
           transform: translateX(0%);
         }

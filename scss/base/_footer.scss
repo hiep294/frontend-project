@@ -1,5 +1,5 @@
 .footer {
-  background-color: #333333;
+  background-color: $color-1;
   &__group-1 {
     display: flex;
     padding: 15px 0;
@@ -41,14 +41,14 @@
           text-decoration: none;
           font-size: 14px;
           font-family: "FiraSans-Bold";
-          color: #ababab;
+          color: $color-2;
           font-weight: bold;
           text-transform: uppercase;
           line-height: 1.714;
           letter-spacing: 0.1em;
           transition: all 0.3s;
           &:hover {
-            color: rgb(214, 186, 141);
+            color: $color-3;
           }
         }
       }
@@ -67,7 +67,7 @@
       justify-content: center;
       align-items: center;
       font-family: "FiraSans-Bold";
-      color: rgb(171, 171, 171);
+      color: $color-2;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 0.15em;
@@ -84,7 +84,7 @@
     margin-top: 40px;
     font-size: 14px;
     font-family: "FiraSans";
-    color: rgb(105, 105, 105);
+    color: $color-4;
     line-height: 2;
     text-align: left;
     letter-spacing: 0;
@@ -111,14 +111,14 @@
       i {
         font-size: 16px;
         transition: all 0.3s;
-        color: rgb(171, 171, 171);
+        color: $color-2;
       }
       &:hover {
-        background-color: #d6ba8d;
-        border-color: #d6ba8d;
+        background-color: $color-3;
+        border-color: $color-3;
       }
       &:hover i {
-        color: #333333;
+        color: $color-1;
       }
     }
   }

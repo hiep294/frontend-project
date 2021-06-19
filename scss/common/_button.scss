@@ -1,5 +1,5 @@
 .button {
-  background-color: #333;
+  background-color: $color-1;
   padding: 15px 29px;
   text-decoration: none;
   display: inline-block;
@@ -7,7 +7,7 @@
   // text
   font-size: 10px;
   font-family: "FiraSans-Bold";
-  color: #fff;
+  color: $color-white;
   font-weight: bold;
   letter-spacing: 2.4px;
   text-transform: uppercase;

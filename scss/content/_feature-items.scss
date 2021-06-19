@@ -31,7 +31,7 @@
     letter-spacing: 0.05em;
     line-height: 1;
     font-family: "FiraSans";
-    color: rgb(51, 51, 51);
+    color: $color-1;
     text-align: center;
     font-size: 34px;
     @include at-sm {
@@ -47,7 +47,7 @@
   .price {
     line-height: 1;
     font-family: "CormorantGaramond-Bold";
-    color: rgb(214, 186, 141);
+    color: $color-3;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -72,7 +72,7 @@
   .text__sale-up-to {
     @include line-clamp(1);
     font-family: "FiraSans";
-    color: rgb(51, 51, 51);
+    color: $color-1;
     text-align: center;
     letter-spacing: 0.2em;
     font-size: 12px;
@@ -105,7 +105,7 @@
   }
   .text__percent {
     font-family: "CormorantGaramond";
-    color: rgb(51, 51, 51);
+    color: $color-1;
     font-weight: bold;
     text-align: center;
 
@@ -139,7 +139,7 @@
   .text__title {
     @include line-clamp(1);
     font-family: "CormorantGaramond-Bold";
-    color: rgb(105, 105, 105);
+    color: $color-4;
     font-weight: bold;
     text-align: center;
     // responsive
@@ -180,7 +180,7 @@
   .text__shop-now {
     text-decoration: none;
     font-family: "FiraSans-Bold";
-    color: rgb(105, 105, 105);
+    color: $color-4;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -272,7 +272,7 @@
   .new-collection {
     @include line-clamp(1);
     font-family: "FiraSans";
-    color: rgb(51, 51, 51);
+    color: $color-1;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.2em;
@@ -304,7 +304,7 @@
   .left-ring {
     @include line-clamp(1);
     font-family: "CormorantGaramond-Bold";
-    color: rgb(214, 186, 141);
+    color: $color-3;
     font-weight: bold;
     // 320px
     font-size: 52px;
@@ -345,7 +345,7 @@
   .text__ring-rose-gold {
     @include line-clamp(2);
     font-family: "CormorantGaramond-Bold";
-    color: rgb(51, 51, 51);
+    color: $color-1;
     font-weight: bold;
     line-height: 1.167;
     text-align: left;
@@ -372,7 +372,7 @@
   .text__rose-gold-plated {
     @include line-clamp(2);
     font-family: "FiraSans";
-    color: rgb(105, 105, 105);
+    color: $color-4;
     letter-spacing: 0.05em;
     line-height: 1.714;
     text-align: left;
