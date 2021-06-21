@@ -68,6 +68,10 @@
       display: flex;
       flex-direction: column;
       margin-top: 80px;
+      padding-right: 11px;
+      @include at-fhd {
+        padding-right: 0px;
+      }
       .social-item {
         list-style: none;
         a {
