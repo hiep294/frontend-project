@@ -30,7 +30,7 @@
     .slider-heading {
       .slider-date {
         font-size: 16.339px;
-        font-family: "FiraSans";
+        font-family: 'FiraSans';
         letter-spacing: 0.5em;
         color: $color-4;
         line-height: 1.333;
@@ -52,7 +52,7 @@
         @include at-xxl {
           font-size: 100px;
         }
-        font-family: "CormorantGaramond-SemiBoldItalic";
+        font-family: 'CormorantGaramond-SemiBoldItalic';
         color: $color-1;
         font-weight: bold;
         font-style: italic;
@@ -72,7 +72,7 @@
         list-style: none;
         a {
           font-size: 13px;
-          font-family: "CormorantGaramond-Medium";
+          font-family: 'CormorantGaramond-Medium';
           color: $color-white;
           line-height: 1.667;
           text-align: right;
@@ -95,7 +95,7 @@
           }
         }
         a:after {
-          content: "";
+          content: '';
           border-bottom: 2px solid #535353;
           width: 150px;
           height: 1px;

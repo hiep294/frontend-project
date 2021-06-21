@@ -35,7 +35,7 @@
     @include line-clamp(2);
     letter-spacing: 0.05em;
     line-height: 1;
-    font-family: "FiraSans";
+    font-family: 'FiraSans';
     color: $color-1;
     text-align: center;
     font-size: 34px;
@@ -51,7 +51,7 @@
   }
   .price {
     line-height: 1;
-    font-family: "CormorantGaramond-Bold";
+    font-family: 'CormorantGaramond-Bold';
     color: $color-3;
     font-weight: bold;
     text-transform: uppercase;
@@ -76,7 +76,7 @@
   // text- atom
   .text__sale-up-to {
     @include line-clamp(1);
-    font-family: "FiraSans";
+    font-family: 'FiraSans';
     color: $color-1;
     text-align: center;
     letter-spacing: 0.2em;
@@ -109,7 +109,7 @@
     }
   }
   .text__percent {
-    font-family: "CormorantGaramond";
+    font-family: 'CormorantGaramond';
     color: $color-1;
     font-weight: bold;
     text-align: center;
@@ -143,7 +143,7 @@
   }
   .text__title {
     @include line-clamp(1);
-    font-family: "CormorantGaramond-Bold";
+    font-family: 'CormorantGaramond-Bold';
     color: $color-4;
     font-weight: bold;
     text-align: center;
@@ -184,7 +184,7 @@
   }
   .text__shop-now {
     text-decoration: none;
-    font-family: "FiraSans-Bold";
+    font-family: 'FiraSans-Bold';
     color: $color-4;
     font-weight: bold;
     text-transform: uppercase;
@@ -276,7 +276,7 @@
   }
   .new-collection {
     @include line-clamp(1);
-    font-family: "FiraSans";
+    font-family: 'FiraSans';
     color: $color-1;
     text-transform: uppercase;
     text-align: center;
@@ -308,7 +308,7 @@
   }
   .left-ring {
     @include line-clamp(1);
-    font-family: "CormorantGaramond-Bold";
+    font-family: 'CormorantGaramond-Bold';
     color: $color-3;
     font-weight: bold;
     // 320px
@@ -349,7 +349,7 @@
   }
   .text__ring-rose-gold {
     @include line-clamp(2);
-    font-family: "CormorantGaramond-Bold";
+    font-family: 'CormorantGaramond-Bold';
     color: $color-1;
     font-weight: bold;
     line-height: 1.167;
@@ -376,7 +376,7 @@
   }
   .text__rose-gold-plated {
     @include line-clamp(2);
-    font-family: "FiraSans";
+    font-family: 'FiraSans';
     color: $color-4;
     letter-spacing: 0.05em;
     line-height: 1.714;

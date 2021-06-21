@@ -16,7 +16,7 @@
   }
   .title {
     font-size: 56px;
-    font-family: "CormorantGaramond-Bold";
+    font-family: 'CormorantGaramond-Bold';
     color: $color-1;
     font-weight: bold;
     line-height: 0.5;
@@ -28,7 +28,7 @@
     margin-right: 9px;
     letter-spacing: 0.13em;
     margin-bottom: -29.5px;
-    font-family: "FiraSans-Bold";
+    font-family: 'FiraSans-Bold';
     color: $color-1;
     font-weight: bold;
     text-transform: uppercase;
@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     &:after {
-      content: "";
+      content: '';
       display: inline-block;
       width: 16px;
       height: 16px;
@@ -115,7 +115,7 @@
           @include line-clamp(1);
           font-size: 14px;
           letter-spacing: 0.1em;
-          font-family: "FiraSans-Bold";
+          font-family: 'FiraSans-Bold';
           color: $color-white;
           font-weight: bold;
           margin-left: 5px;
@@ -145,7 +145,7 @@
       @include line-clamp(1);
       padding-top: 18px;
       font-size: 14px;
-      font-family: "FiraSans";
+      font-family: 'FiraSans';
       color: $color-1;
       letter-spacing: 0.05em;
       text-align: center;
@@ -153,7 +153,7 @@
     .price {
       padding-top: 7px;
       font-size: 18px;
-      font-family: "CormorantGaramond-Bold";
+      font-family: 'CormorantGaramond-Bold';
       color: $color-3;
       font-weight: bold;
       text-transform: uppercase;

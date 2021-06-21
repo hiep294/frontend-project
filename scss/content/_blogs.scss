@@ -7,7 +7,7 @@
     .title {
       transform: translateY(-75%);
       font-size: 56px;
-      font-family: "CormorantGaramond";
+      font-family: 'CormorantGaramond';
       color: $color-1;
       font-weight: bold;
       line-height: 0.5;
@@ -28,7 +28,7 @@
   }
   &__date {
     font-size: 14px;
-    font-family: "FiraSans";
+    font-family: 'FiraSans';
     color: $color-6;
     text-transform: uppercase;
     line-height: 1.714;
@@ -41,7 +41,7 @@
     .inner-text {
       @include line-clamp(2);
       font-size: 24px;
-      font-family: "CormorantGaramond";
+      font-family: 'CormorantGaramond';
       color: $color-1;
       font-weight: bold;
       line-height: 32px;
@@ -52,7 +52,7 @@
   &__share {
     display: flex;
     font-size: 14px;
-    font-family: "FiraSans";
+    font-family: 'FiraSans';
     padding-top: 18px;
     padding-bottom: 23px;
     color: $color-4;
@@ -86,7 +86,7 @@
       margin-left: -5px;
       display: block;
       font-size: 24px;
-      font-family: "CormorantGaramond";
+      font-family: 'CormorantGaramond';
       color: $color-1;
       line-height: 28px;
       text-align: center;
