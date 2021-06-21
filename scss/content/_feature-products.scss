@@ -42,7 +42,7 @@
       width: 16px;
       height: 16px;
       margin-left: 12px;
-      background: url("images/icons/view-more.png") no-repeat 0 0;
+      background: url('images/icons/view-more.png') no-repeat 0 0;
     }
   }
   // &__body {
@@ -70,7 +70,7 @@
       align-items: center;
       border-radius: 50%;
       cursor: pointer;
-      background: url("images/icons/prev.png") no-repeat 0 0;
+      background: url('images/icons/prev.png') no-repeat 0 0;
       background-position: center;
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
@@ -79,7 +79,7 @@
     .next {
       left: auto;
       right: 0px;
-      background: url("images/icons/next.png") no-repeat 0 0;
+      background: url('images/icons/next.png') no-repeat 0 0;
       background-position: center;
     }
 
