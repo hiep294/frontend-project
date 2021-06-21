@@ -16,8 +16,13 @@
   }
 }
 
-.feature-item-1 {
+.feature-item {
+  height: 100%;
   position: relative;
+}
+
+.feature-item-1 {
+  @extend .feature-item;
   .text-container {
     position: absolute;
     width: 100%;
@@ -27,7 +32,7 @@
     min-height: 22%;
   }
   .name {
-    @include line-clamp(1);
+    @include line-clamp(2);
     letter-spacing: 0.05em;
     line-height: 1;
     font-family: "FiraSans";
@@ -67,7 +72,7 @@
 }
 
 .feature-item-2 {
-  position: relative;
+  @extend .feature-item;
   // text- atom
   .text__sale-up-to {
     @include line-clamp(1);
@@ -261,7 +266,7 @@
 }
 
 .feature-item-3 {
-  position: relative;
+  @extend .feature-item;
   .text-container {
     position: absolute;
     width: 100%;
@@ -332,7 +337,7 @@
 }
 
 .feature-item-6 {
-  position: relative;
+  @extend .feature-item;
   .text-container {
     bottom: auto;
     max-width: 250px;
