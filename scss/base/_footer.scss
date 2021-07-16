@@ -29,7 +29,7 @@
       @include at-xl {
         margin-top: 75px;
       }
-      .links {
+      ul.links {
         display: flex;
         flex-wrap: wrap;
         margin-top: 0px;
@@ -37,7 +37,7 @@
         @include at-xl {
           justify-content: flex-start;
         }
-        .link {
+        li {
           &:not(:last-of-type) {
             margin-right: 33px;
           }
