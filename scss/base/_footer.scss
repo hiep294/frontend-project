@@ -24,37 +24,41 @@
         margin-top: 7px;
       }
     }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 0px;
-      justify-content: center;
+    .footer-navigation {
+      flex: 2.25;
       @include at-xl {
         margin-top: 75px;
-        justify-content: flex-start;
       }
-      flex: 2.25;
-      .link {
-        &:not(:last-of-type) {
-          margin-right: 33px;
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        justify-content: center;
+        @include at-xl {
+          justify-content: flex-start;
         }
-        a {
-          text-decoration: none;
-          font-size: 14px;
-          font-family: 'FiraSans-Bold';
-          color: $color-2;
-          font-weight: bold;
-          text-transform: uppercase;
-          line-height: 1.714;
-          letter-spacing: 0.1em;
-          transition: all 0.3s;
-          &:hover {
-            color: $color-3;
+        .link {
+          &:not(:last-of-type) {
+            margin-right: 33px;
+          }
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'FiraSans-Bold';
+            color: $color-2;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.714;
+            letter-spacing: 0.1em;
+            transition: all 0.3s;
+            &:hover {
+              color: $color-3;
+            }
           }
         }
       }
     }
+
     .subscribe {
       height: 40px;
       margin-top: 0px;
