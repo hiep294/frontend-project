@@ -45,6 +45,7 @@
 body {
   // font-size: 62.5%;
   font-family: 'CormorantGaramond', serif;
+  background-color: #fff;
 }
 
 li {
@@ -54,4 +55,9 @@ li {
 img {
   cursor: pointer;
   vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

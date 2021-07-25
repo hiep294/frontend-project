@@ -95,36 +95,43 @@
     text-align: left;
     letter-spacing: 0;
   }
-  .socials {
+  .copy-right {
+    display: block;
+    margin-top: 0;
+  }
+  ul.socials {
     display: flex;
     margin-top: 30px;
     margin-right: 1px;
     flex-wrap: wrap;
     row-gap: 9px;
-    a.social {
-      display: flex;
-      width: 48px;
-      height: 48px;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid #4e4e4e;
-      border-radius: 50%;
-      text-decoration: none;
-      transition: all 0.3s;
+    li {
       &:not(:last-of-type) {
         margin-right: 9px;
       }
-      i {
-        font-size: 16px;
+      a {
+        display: flex;
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #4e4e4e;
+        border-radius: 50%;
+        text-decoration: none;
         transition: all 0.3s;
-        color: $color-2;
-      }
-      &:hover {
-        background-color: $color-3;
-        border-color: $color-3;
-      }
-      &:hover i {
-        color: $color-1;
+
+        i {
+          font-size: 16px;
+          transition: all 0.3s;
+          color: $color-2;
+        }
+        &:hover {
+          background-color: $color-3;
+          border-color: $color-3;
+        }
+        &:hover i {
+          color: $color-1;
+        }
       }
     }
   }
