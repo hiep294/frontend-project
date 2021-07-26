@@ -32,12 +32,12 @@
     color: $color-6;
     text-transform: uppercase;
     line-height: 1.714;
-    margin-top: 24px;
+    padding-top: 24px;
     letter-spacing: 0.1em;
   }
   &__title {
     height: 115px;
-    margin-top: 19px;
+    padding-top: 19px;
     .inner-text {
       @include line-clamp(2);
       font-size: 24px;
