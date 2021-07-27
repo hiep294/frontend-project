@@ -24,6 +24,10 @@
       }
     }
   }
+  // reset float style
+  padding: 0;
+  list-style: none outside;
+  clear: both;
 }
 
 .col-0 {
